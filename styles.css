@@ -1,13 +1,23 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+
 body {
-    margin: 0;
-    padding: 0;
-    background: #ccee66;
-    color: white;
+    font-family: 'poppins', sans-serif;
     padding: 20px 160px;
     height: 100vh;
-    font-family: "Noto Sans", sans-serif;
-
+    background: #ccee66;
+    color: azure;
     overflow: hidden;
+    font-family: "Noto Sans", sans-serif;
+    animation: acendeTela 1.5s ease-in-out;
+}
+
+@keyframes acendeTela {
+    from {
+        background-color: #000000;
+    }
+    to {
+        background-color: #ccee66; /* ou a cor inicial que você quiser */
+    }
 }
 
 body::before {
@@ -35,7 +45,7 @@ body::after {
 }
 
 .logo {
-    width: 80px;
+    width: 75px;
 }
 
 h4 {
